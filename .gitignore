@@ -1,0 +1,51 @@
+# Исключаем файлы и папки для сборки
+Edu.StockApi/src/Edu.StockApiWeb/bin
+bin/
+obj/
+
+# Папки для кэша NuGet
+# Если вы используете NuGet, исключаем кэш пакетов
+.nuget/
+# Для проектов .NET Core или .NET 5/6/7 кэш NuGet обычно находится в папке ~/.nuget
+# Например:
+# ~/.nuget/packages/
+
+# Файлы конфигурации
+appsettings*.json
+# Исключаем конфигурационные файлы для локальной разработки
+local.settings.json
+
+# Для пользователей Visual Studio
+.vs/
+.vscode/
+.idea/
+
+# Папка, генерируемая при публикации
+publish/
+
+# Логи и временные файлы
+*.log
+*.tlog
+*.vspscc
+
+# Исключаем файлы настроек среды сборки
+.vsconfig
+
+# Для пользователей JetBrains Rider
+.idea/
+
+# Исключаем бинарные файлы и другие автоматически генерируемые файлы
+*.dll
+*.exe
+*.pdb
+*.cache
+*.dat
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Для проектов на ASP.NET Core и других связанных технологий
+# Исключаем файлы сертификатов и ключей
+*.pfx
+*.publishsettings
