@@ -3,8 +3,9 @@
         <TargetFramework>net8.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
-        <RootNamespace>Edu.StockApiWeb</RootNamespace>
+        <RootNamespace>Edu.StockApi.Web</RootNamespace>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <Version>5.5.2</Version>
     </PropertyGroup>
     <ItemGroup>
       <ProjectReference Include="..\Edu.StockApi.HttpModels\Edu.StockApi.HttpModels.csproj" />

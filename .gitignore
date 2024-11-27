@@ -1,5 +1,5 @@
 # Исключаем файлы и папки для сборки
-Edu.StockApi/src/Edu.StockApiWeb/bin
+Edu.StockApi/src/Edu.StockApi.Web/bin
 bin/
 obj/
 
