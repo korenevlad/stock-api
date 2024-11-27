@@ -4,8 +4,12 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <RootNamespace>Edu.StockApiWeb</RootNamespace>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
     </PropertyGroup>
     <ItemGroup>
       <ProjectReference Include="..\Edu.StockApi.HttpModels\Edu.StockApi.HttpModels.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="7.1.0" />
     </ItemGroup>
 </Project>

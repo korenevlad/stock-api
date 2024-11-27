@@ -6,6 +6,7 @@ namespace Edu.StockApi.Web.Controllers;
 
 [ApiController]
 [Route("v1/api/stocks")]
+[Produces("application/json")]
 public class StockController: ControllerBase
 {
     private readonly IStockService _stockService;
@@ -16,14 +17,17 @@ public class StockController: ControllerBase
     }
 
     [HttpGet]
-    public async Task<ActionResult<List<StockItem>>> GetAll(CancellationToken token)
+    [ProducesResponseType(typeof(List<StockItem>), StatusCodes.Status200OK)]
+    public async Task<IActionResult> GetAll(CancellationToken token)
     {
         var stockItems = await _stockService.GetAll(token);
         return Ok(stockItems);
     }
 
-    [HttpGet("id:long")]
-    public async Task<ActionResult<StockItem>> GetById(long id, CancellationToken token)
+    [HttpGet("{id:long}")]
+    [ProducesResponseType(typeof(StockItem), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<IActionResult> GetById(long id, CancellationToken token)
     {
         var stockItem = await _stockService.GetByID(id, token);
         if (stockItem is null)
@@ -33,6 +37,12 @@ public class StockController: ControllerBase
         return Ok(stockItem);
     }
     
+    /// <summary>
+    /// Добавляет stock item.
+    /// </summary>
+    /// <param name="item"></param>
+    /// <param name="token"></param>
+    /// <returns></returns>
     [HttpPost]
     public async Task<ActionResult<StockItem>> Add(StockItemPostViewModel item, CancellationToken token)
     {

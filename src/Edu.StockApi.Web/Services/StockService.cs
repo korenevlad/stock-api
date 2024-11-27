@@ -13,7 +13,7 @@ public class StockService : IStockService
     {
         new StockItem(1, "Футболка", 10),
         new StockItem(2, "Кепка", 20),
-        new StockItem(1, "Шарф", 30),
+        new StockItem(3, "Шарф", 30),
     };
 
     public Task<List<StockItem>> GetAll(CancellationToken token) => Task.FromResult(StockItems);
