@@ -53,9 +53,4 @@ public class StockController: ControllerBase
         }, token);
         return Ok(createdStockItem);
     }
-
-    // public async Task<ActionResult<StockItem>> Update(long id, StockItemPutViewModel model, CancellationToken token)
-    // {
-    //     
-    // } 
 }

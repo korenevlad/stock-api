@@ -8,9 +8,11 @@
         <Version>5.5.2</Version>
     </PropertyGroup>
     <ItemGroup>
+      <ProjectReference Include="..\Edu.StockApi.Grpc\Edu.StockApi.Grpc.csproj" />
       <ProjectReference Include="..\Edu.StockApi.HttpModels\Edu.StockApi.HttpModels.csproj" />
     </ItemGroup>
     <ItemGroup>
+      <PackageReference Include="Grpc.AspNetCore" Version="2.67.0" />
       <PackageReference Include="Swashbuckle.AspNetCore" Version="7.1.0" />
     </ItemGroup>
 </Project>
