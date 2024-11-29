@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edu.StockApi.HttpClients", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edu.StockApi.Grpc", "src\Edu.StockApi.Grpc\Edu.StockApi.Grpc.csproj", "{839B1271-57BF-4F07-83D2-22CE1AA79FAC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edu.StockApi.GrpcClient", "src\Edu.StockApi.GrpcClient\Edu.StockApi.GrpcClient.csproj", "{A61EA32D-A92C-470B-8C29-39875E522E65}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,7 @@ Global
 		{146F5324-F3E8-497F-A32D-63D59EF245BE} = {86337F23-1545-47D8-8395-373C5EF6B0DC}
 		{2229958F-D7E5-4231-8CA3-443D2C49A268} = {86337F23-1545-47D8-8395-373C5EF6B0DC}
 		{839B1271-57BF-4F07-83D2-22CE1AA79FAC} = {86337F23-1545-47D8-8395-373C5EF6B0DC}
+		{A61EA32D-A92C-470B-8C29-39875E522E65} = {86337F23-1545-47D8-8395-373C5EF6B0DC}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{D3155ED4-C8D0-4261-A52E-27F57E78BA87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -48,5 +51,9 @@ Global
 		{839B1271-57BF-4F07-83D2-22CE1AA79FAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{839B1271-57BF-4F07-83D2-22CE1AA79FAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{839B1271-57BF-4F07-83D2-22CE1AA79FAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A61EA32D-A92C-470B-8C29-39875E522E65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A61EA32D-A92C-470B-8C29-39875E522E65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A61EA32D-A92C-470B-8C29-39875E522E65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A61EA32D-A92C-470B-8C29-39875E522E65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
